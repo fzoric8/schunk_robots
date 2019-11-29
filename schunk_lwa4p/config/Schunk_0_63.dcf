@@ -1100,6 +1100,16 @@ DataType=0x0006
 AccessType=rww
 PDOMapping=1
 
+[6040sub0]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=255
+PDOMapping=0
+ObjFlags=0
+ParameterValue=0xFF
+
 [6041]
 ParameterName=statusword
 ObjectType=0x7
@@ -1245,6 +1255,17 @@ ObjectType=0x7
 DataType=0x0002
 AccessType=rw
 PDOMapping=1
+ParameterValue=0x1
+
+[6060sub0]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=255
+PDOMapping=0
+ObjFlags=0
+ParameterValue=0xFF
 
 [6061]
 ParameterName=modes_of_operation_display
