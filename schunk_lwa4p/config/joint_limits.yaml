@@ -1,5 +1,5 @@
 joint_limits:
-  arm_1_joint:
+  lwa4p_joint1:
    has_position_limits: false
    min_position: -3.14
    max_position: 3.14
@@ -11,7 +11,7 @@ joint_limits:
     max_jerk: 100.0
     has_effort_limits: false
     max_effort: 5.0
-  arm_2_joint:
+  lwa4p_joint2:
    has_position_limits: false
    min_position: -3.14
    max_position: 3.14
@@ -23,7 +23,7 @@ joint_limits:
     max_jerk: 100.0
     has_effort_limits: false
     max_effort: 5.0
-  arm_3_joint:
+  lwa4p_joint3:
    has_position_limits: false
    min_position: -3.14
    max_position: 3.14
@@ -35,7 +35,7 @@ joint_limits:
     max_jerk: 100.0
     has_effort_limits: false
     max_effort: 5.0
-  arm_4_joint:
+  lwa4p_joint4:
    has_position_limits: false
    min_position: -3.14
    max_position: 3.14
@@ -47,7 +47,7 @@ joint_limits:
     max_jerk: 100.0
     has_effort_limits: false
     max_effort: 5.0
-  arm_5_joint:
+  lwa4p_joint5:
    has_position_limits: false
    min_position: -3.14
    max_position: 3.14
@@ -59,7 +59,7 @@ joint_limits:
     max_jerk: 100.0
     has_effort_limits: false
     max_effort: 5.0
-  arm_6_joint:
+  lwa4p_joint6:
    has_position_limits: false
    min_position: -2.0943951
    max_position: 2.0943951

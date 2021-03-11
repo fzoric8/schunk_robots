@@ -5,12 +5,12 @@ hardware_control_loop:
 # Settings for ros_control hardware interface
 hardware_interface:
    joints:
-     - arm_1_joint
-     - arm_2_joint
-     - arm_3_joint
-     - arm_4_joint
-     - arm_5_joint
-     - arm_6_joint
+     - lwa4p_joint1
+     - lwa4p_joint2
+     - lwa4p_joint3
+     - lwa4p_joint4
+     - lwa4p_joint5
+     - lwa4p_joint6
 
 # Publish all joint states ----------------------------------
 joint_state_controller:
@@ -19,25 +19,51 @@ joint_state_controller:
 
 # Joint Trajectory Controller - position based -------------------------------
 # For detailed explanations of parameter see http://wiki.ros.org/joint_trajectory_controller
-lwa4p_blue_jtc:
-  type: position_controllers/JointTrajectoryController
-  joints:
-     - arm_1_joint
-     - arm_2_joint
-     - arm_3_joint
-     - arm_4_joint
-     - arm_5_joint
-     - arm_6_joint
-  constraints:
-      goal_time: 1.0
-      stopped_velocity_tolerance: 0.05
-      arm_1_joint: {trajectory: 0.2, goal: 0.2}
-      arm_2_joint: {trajectory: 0.2, goal: 0.2}
-      arm_3_joint: {trajectory: 0.2, goal: 0.2}
-      arm_4_joint: {trajectory: 0.2, goal: 0.2}
-      arm_5_joint: {trajectory: 0.2, goal: 0.2}
-      arm_6_joint: {trajectory: 0.2, goal: 0.2}
-  stop_trajectory_duration: 0.5
-  state_publish_rate:  25
-  action_monitor_rate: 10
-  required_drive_mode: 7
+# lwa4p_blue_jtc:
+#  type: position_controllers/JointTrajectoryController
+#  joints:
+#     - arm_1_joint
+#     - arm_2_joint
+#     - arm_3_joint
+#     - arm_4_joint
+#     - arm_5_joint
+#     - arm_6_joint
+#  constraints:
+#      goal_time: 1.0
+#      stopped_velocity_tolerance: 0.05
+#      arm_1_joint: {trajectory: 0.2, goal: 0.2}
+#      arm_2_joint: {trajectory: 0.2, goal: 0.2}
+#      arm_3_joint: {trajectory: 0.2, goal: 0.2}
+#      arm_4_joint: {trajectory: 0.2, goal: 0.2}
+#      arm_5_joint: {trajectory: 0.2, goal: 0.2}
+#      arm_6_joint: {trajectory: 0.2, goal: 0.2}
+#  stop_trajectory_duration: 0.5
+#  state_publish_rate:  25
+#  action_monitor_rate: 10
+#  required_drive_mode: 7
+
+
+arm_1_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: lwa4p_joint1
+  required_drive_mode: 1
+arm_2_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: lwa4p_joint2
+  required_drive_mode: 1
+arm_3_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: lwa4p_joint3
+  required_drive_mode: 1
+arm_4_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: lwa4p_joint4
+  required_drive_mode: 1
+arm_5_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: lwa4p_joint5
+  required_drive_mode: 1
+arm_6_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: lwa4p_joint6
+  required_drive_mode: 1

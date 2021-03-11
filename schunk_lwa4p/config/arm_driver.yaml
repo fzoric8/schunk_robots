@@ -12,15 +12,15 @@ defaults:
     # "604Csub2": "24000" # vl dimension factor denominator
 
 nodes:
-  arm_1_joint:
+  lwa4p_joint1:
     id: 3
-  arm_2_joint:
+  lwa4p_joint2:
     id: 4
-  arm_3_joint:
+  lwa4p_joint3:
     id: 5
-  arm_4_joint:
+  lwa4p_joint4:
     id: 6
-  arm_5_joint:
+  lwa4p_joint5:
     id: 7
-  arm_6_joint:
+  lwa4p_joint6:
     id: 8
