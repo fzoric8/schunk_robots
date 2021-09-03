@@ -15,7 +15,7 @@ hardware_interface:
 # Publish all joint states ----------------------------------
 lwa4p/joint_state_controller:
    type:         joint_state_controller/JointStateController
-   publish_rate: 50
+   publish_rate: 100
 
 #Joint Trajectory Controller - position based -------------------------------
 # For detailed explanations of parameter see http://wiki.ros.org/joint_trajectory_controller
@@ -70,4 +70,15 @@ joint_5_position_controller:
 joint_6_position_controller:
   type: position_controllers/JointPositionController
   joint: lwa4p_joint6
+  required_drive_mode: 1
+
+joint_group_position_controller:
+  type: position_controllers/JointGroupPositionController
+  joints:
+    - lwa4p_joint1
+    - lwa4p_joint2
+    - lwa4p_joint3
+    - lwa4p_joint4
+    - lwa4p_joint5
+    - lwa4p_joint6
   required_drive_mode: 1
