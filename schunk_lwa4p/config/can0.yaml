@@ -1,5 +1,7 @@
 bus:
   device: can0
+  #master_allocator: canopen::ExternalMaster::Allocator
 sync:
-  interval_ms: 50
-  overflow: 0
+  # This interval defines ms at which PDO messages will be exchanged, everything biggger
+  interval_ms: 25
+#
