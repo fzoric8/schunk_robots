@@ -20,14 +20,14 @@ joint_trajectory_controller:
      - lwa4p_joint5
      - lwa4p_joint6
   constraints:
-      goal_time: 0.6
+      goal_time: 15.0         # If the timestamp of the goal trajectory point is t, then following the trajectory succeeds if it reaches the goal within t +/- goal_time, and aborts otherwise.
       stopped_velocity_tolerance: 0.05
-      lwa4p_joint1: {trajectory: 0.1, goal: 0.1}
-      lwa4p_joint2: {trajectory: 0.1, goal: 0.1}
-      lwa4p_joint3: {trajectory: 0.1, goal: 0.1}
-      lwa4p_joint4: {trajectory: 0.1, goal: 0.1}
-      lwa4p_joint5: {trajectory: 0.1, goal: 0.1}
-      lwa4p_joint6: {trajectory: 0.1, goal: 0.1}
+      lwa4p_joint1: {trajectory: 0.05, goal: 0.001}
+      lwa4p_joint2: {trajectory: 0.05, goal: 0.001}
+      lwa4p_joint3: {trajectory: 0.05, goal: 0.001}
+      lwa4p_joint4: {trajectory: 0.05, goal: 0.001}
+      lwa4p_joint5: {trajectory: 0.05, goal: 0.001}
+      lwa4p_joint6: {trajectory: 0.05, goal: 0.001}
   stop_trajectory_duration: 0.5
   state_publish_rate:  25
   action_monitor_rate: 10

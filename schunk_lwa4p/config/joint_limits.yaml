@@ -1,8 +1,8 @@
 joint_limits:
   lwa4p_joint1:
-   has_position_limits: false
-   min_position: -3.14
-   max_position: 3.14
+   has_position_limits: true
+   min_position: -2.957
+   max_position: 2.957
     has_velocity_limits: false
     max_velocity: 0.4
     has_acceleration_limits: false
@@ -13,8 +13,8 @@ joint_limits:
     max_effort: 5.0
   lwa4p_joint2:
    has_position_limits: false
-   min_position: -3.14
-   max_position: 3.14
+   min_position: -2.957
+   max_position: 2.957
     has_velocity_limits: false
     max_velocity: 0.4
     has_acceleration_limits: false
@@ -25,8 +25,8 @@ joint_limits:
     max_effort: 5.0
   lwa4p_joint3:
    has_position_limits: false
-   min_position: -3.14
-   max_position: 3.14
+   min_position: -2.704
+   max_position: 2.704
     has_velocity_limits: false
     max_velocity: 0.4
     has_acceleration_limits: false
@@ -37,8 +37,8 @@ joint_limits:
     max_effort: 5.0
   lwa4p_joint4:
    has_position_limits: false
-   min_position: -3.14
-   max_position: 3.14
+   min_position: -2.957
+   max_position: 2.957
     has_velocity_limits: false
     max_velocity: 0.4
     has_acceleration_limits: false
@@ -49,8 +49,8 @@ joint_limits:
     max_effort: 5.0
   lwa4p_joint5:
    has_position_limits: false
-   min_position: -3.14
-   max_position: 3.14
+   min_position: -2.957
+   max_position: 2.957
     has_velocity_limits: false
     max_velocity: 0.4
     has_acceleration_limits: false
@@ -61,8 +61,8 @@ joint_limits:
     max_effort: 5.0
   lwa4p_joint6:
    has_position_limits: false
-   min_position: -3.14
-   max_position: 3.14
+   min_position: -2.957
+   max_position: 2.957
     has_velocity_limits: false
     max_velocity: 1.0
     has_acceleration_limits: false
