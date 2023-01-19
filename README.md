@@ -1,4 +1,4 @@
-# Schunk robots 
+# Schunk Robots 
 
 This package contains driver for Schunk LWA4P and LWA4D robotic arms. 
 
@@ -38,17 +38,14 @@ and another one is used for schunk without separator end effector.
 There are different namespaces and I didn't want to change anything too much to 
 make sure i have working configuration for separator end effector.
 
-**At some point, it will be good.  merge those two configs and launches. 
-Basically when i fix namespaces for separator end effector. **
+If you want to set or get certain values from robot that correspond to 
+address in robot object dictionary, it's possible to use following 
+ROS service call: 
+```
+rosservice call /lwa4p/driver/get_object "node: 'lwa4p_joint6' object: '6062' cached: false" 
+success: True message: '' value: "52715"
+```
 
 TODO: 
-- [x] Convert `schunk_blue` to `lwa4p` --> Not neccessary
-- [x] Rename joints and controllers 
-- [x] Test arm_x_joint_position_controller 
-- [x] Test arm_joint_trajectory_controller
-- [x] Use schunk driver with gazebo 
-- [x] Integrate driver part of this package with [schunk_lwa4p_ros] metapackage that contains all 
-relevant packages --> redundant, better if decoupled 
-- [ ] Fix namespaces for arm with separator end effector (double lwa4p) 
-- [ ] Merge bare and blue into one config file for real robot 
+- [ ] Find out how to reset current joint positions with SDO request
  
